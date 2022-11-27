@@ -36,7 +36,7 @@ public class TruskLinks {
 
 
     @When("the user hits the button")
-    public void theUserHitsTheButton() {
+    public void theUserHitsTheButton() throws InterruptedException {
         searchPageGoogle.ClickOntheGoogleSearchButton();
 
     }

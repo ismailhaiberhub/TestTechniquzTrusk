@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/main/resources/Features"},
         glue={"StepDefinitions","AppHooks"},
-        tags="@Smoke",
+        tags="",
         plugin = { "pretty","json:target/cucumber.json"}
 )
 public class FirstTestRunner {

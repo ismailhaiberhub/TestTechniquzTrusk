@@ -13,7 +13,7 @@ Feature: The user verify the access to the website of Trusk
       |https://www.google.com| Trusk livre tout, tout de suite| https://trusk.com/fr/ |
 
 
-    @Smoke
+
     Scenario Outline: The user verfiy the links of Trusk Website
       Given the user on the google page "<GoogleUrl>"
       And the user verify that the search bar is empty

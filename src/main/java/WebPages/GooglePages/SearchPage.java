@@ -52,7 +52,10 @@ public class SearchPage {
         driver.findElement(googleSearchBar).sendKeys(text);
     }
 
-    public void ClickOntheGoogleSearchButton(){
+    public void ClickOntheGoogleSearchButton() throws InterruptedException {
+        //Thread.sleep(2000);
+        wait.until(ExpectedConditions.presenceOfElementLocated(googleSearchButton));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(googleSearchButton));
         driver.findElement(googleSearchButton).click();
     }
 
